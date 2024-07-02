@@ -5,7 +5,7 @@ import Carousel from './carousel.jsx';
 function Home() {
     return (
         <div id='home'>
-            <Navbar />
+            {/* <Navbar /> */}
             <Carousel />
         </div>
     );
