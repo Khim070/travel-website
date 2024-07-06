@@ -62,7 +62,7 @@ git clone https://github.com/Khim070/travel-website.git`
    Run the application using the following command:
   `npm start`
 
-  The application will automatically open in your default web browser at http://localhost:3000.
+  The application will automatically open in your default web browser at http://localhost:4000.
 
 ## Usage
     The website application fetches data from the backend services to display travel-related information.
