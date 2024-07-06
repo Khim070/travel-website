@@ -15,7 +15,6 @@ function ContactUs() {
                     .filter(item => item.id === 1);
 
                 setHeader(activeHeader);
-                // console.log(activeHeader);
             } catch (error) {
                 console.error('Failed to fetch header:', error);
             }
@@ -33,7 +32,6 @@ function ContactUs() {
                     .sort((a, b) => a.orderID - b.orderID);
 
                 setDetailContact(activeContact);
-                // console.log(activeContact);
             } catch (error) {
                 console.error('Failed to fetch detail contact:', error);
             }
@@ -51,7 +49,6 @@ function ContactUs() {
                     .sort((a, b) => a.orderID - b.orderID);
 
                 setDetailInfo(activeInfo);
-                // console.log(activeInfo);
             } catch (error) {
                 console.error('Failed to fetch detail info:', error);
             }
@@ -60,8 +57,10 @@ function ContactUs() {
         fetchInfo();
     }, []);
 
+    const isActive = header.length > 0 && header[0].active === 1;
+
     return (
-        <div id='contact-us'>
+        <div id='contact-us' className={isActive ? 'block' : 'hidden' }>
             {header.map((item, i) => (
                 <div className=" top-0 mx-auto max-w-screen-2xl px-4 flex justify-between w-full">
                     <div className='mx-0 h-auto w-full'>

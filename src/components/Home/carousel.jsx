@@ -29,11 +29,9 @@ function Carousel() {
                 const activeBG = response.data
                     .filter(item => item.id === 1);
 
-                // Assuming bgImage is a comma-separated string of image URLs
                 const imageUrls = activeBG[0].bgImage.split('/').map(imageName => `http://localhost:8080/image/${imageName}`);
                 setImages(imageUrls);
                 setBG(activeBG);
-                // console.log(activeBG);
             } catch (error) {
                 console.error('Failed to fetch background:', error);
             }

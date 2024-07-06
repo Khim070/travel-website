@@ -14,7 +14,6 @@ function About() {
                     .filter(item => item.id === 1);
 
                 setAboutUs(activeAboutUs);
-                // console.log(activeAboutUs);
             } catch (error) {
                 console.error('Failed to fetch about us:', error);
             }
