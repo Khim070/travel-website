@@ -1,6 +1,3 @@
-import Hotel1 from '../../img/hotel1.jpg';
-import Hotel2 from '../../img/hotel2.jpg';
-import Hotel3 from '../../img/hotel3.jpg';
 import { useEffect, useState } from 'react';
 import { getHeaderPopular, getAllCard } from '../../Services/ReviewServices.jsx';
 import { useNavigate } from 'react-router-dom';
